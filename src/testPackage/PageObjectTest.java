@@ -16,6 +16,7 @@ import userGenerator.BlueUserGenerator;
 import blueSourcePages.BlueMain;
 import blueSourcePages.BlueSourceLogin;
 
+
 public class PageObjectTest {
 
 	static WebDriver driver;
@@ -52,8 +53,10 @@ public class PageObjectTest {
 		mainPage.selectEmployee(user.getEmployeeFirstName(), user.getEmployeeLastName());
 	}
 
+
 	/**
 	 * Adds a new employee
+	 * @param manager
 	 */
 	public void addEmployee(String manager) {
 		user = new BlueUserGenerator(manager);

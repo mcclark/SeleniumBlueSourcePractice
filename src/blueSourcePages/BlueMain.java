@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import blueSourceWindows.AddEmployeeWindow;
 import userGenerator.BlueUserGenerator;
 
+
 public class BlueMain extends GeneralPage {
 
 	protected AddEmployeeWindow AddEmployee;
