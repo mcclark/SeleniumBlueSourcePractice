@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="BlueSourceTest" verbose="1" >
+  <test name="PageObjectLogin">
+  	<parameter name="firstName" value="company" />
+		<parameter name="lastName" value="admin" />
+		<parameter name="password" value="anything" />
+		<parameter name="url" value="http://bluesourcestaging.herokuapp.com/" />
+		<parameter name="manager" value="Eric Trout" />
+    	<classes>
+       		<class name="testPackage.PageObjectTest" />
+    	</classes>
+  </test>
+</suite>

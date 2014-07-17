@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BlueSourceTest]">
+  <parameter name="firstName" value="company"/>
+  <parameter name="lastName" value="admin"/>
+  <parameter name="password" value="anything"/>
+  <parameter name="manager" value="Eric Trout"/>
+  <parameter name="url" value="http://bluesourcestaging.herokuapp.com/"/>
+  <test name="PageObjectLogin(failed)">
+    <parameter name="firstName" value="company"/>
+    <parameter name="lastName" value="admin"/>
+    <parameter name="password" value="anything"/>
+    <parameter name="manager" value="Eric Trout"/>
+    <parameter name="url" value="http://bluesourcestaging.herokuapp.com/"/>
+    <classes>
+      <class name="testPackage.PageObjectTest">
+        <methods>
+          <include name="initializeTest"/>
+          <include name="cleanup"/>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testPackage.PageObjectTest -->
+    </classes>
+  </test> <!-- PageObjectLogin(failed) -->
+</suite> <!-- Failed suite [BlueSourceTest] -->
